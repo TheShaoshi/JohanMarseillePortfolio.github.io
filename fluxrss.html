@@ -26,10 +26,16 @@
       </header>
 
       <main>
-        <h2>Actualités Informatique</h2>
+        
+        <h1>Actualités Informatique</h1>
 
         <section>
-          <h3>1. Actualités de Developpez.com</h3>
+            <h2>1. Actualités de ZDNet</h2>
+            <div id="rss-zdnet"></div>
+          </section>
+       
+        <section>
+          <h3>2. Actualités de Developpez.com</h3>
           <div id="rss-developpez"></div>
         </section>
 
@@ -42,7 +48,7 @@
     <script>
       const feeds = [
         { id: "rss-developpez", url: "https://www.developpez.com/index/rss" },
-        { id: "rss-devto", url: "https://dev.to/feed" },
+        { id: "rss-zdnet", url: "https://www.zdnet.com/news/rss.xml" },
       ];
 
       async function fetchRSS(feedId, feedUrl) {
